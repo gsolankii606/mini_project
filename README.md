@@ -1,2 +1,2 @@
-# git init
+## git init
 ## git add .
