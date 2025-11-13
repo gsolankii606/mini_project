@@ -11,10 +11,11 @@ jobs:
 
     steps:
       -name: Checkout code
-      uses: actions/Checkout@v4
+       uses: actions/Checkout@v4 
 
       -name: Deploy to Github pages
-      uses: Peaceiris/actions--gh-pages@v3
+       uses: Peaceiris/actions--gh-pages@v3
       with: 
-        github_token: ${{secrets. }}
-        publish_dir: .
+        github_token: ${{secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./
